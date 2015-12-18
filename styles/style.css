@@ -1,0 +1,272 @@
+@font-face{
+	font-family : 'Star Jedi'
+    src: url('../fonts/jedi/Starjedi.eot');
+	src: url('../fonts/jedi/Starjedi.woff') format('woff'), 
+		 url('../fonts/jedi/Starjedi.ttf') format('truetype'), 
+		 url('../fonts/jedi/Starjedi.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+    font-family : "Swis721 BlkCN BT";
+    src : url('../fonts/BlkCNBT.ttf');
+
+    font-family: "Swis721 Lt BT"; 
+    src : url('../fonts/LtBT.ttf');
+}
+
+body {
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+}
+
+/* ------------------------------ NAV-BAR ------------------------------ */
+.home-container nav {
+	position: absolute;
+	top: 0;
+	background: rgba(255, 255, 255, 0.25);
+	width: 100%;
+	height: auto;
+}
+
+.home-container nav li {
+	float: right;
+	margin-right: 40px;
+}
+
+.home-container nav ul {
+	display: inline-block;
+	margin: 0px;
+	padding: 8px 20px;
+}
+
+.home-container nav ul a {
+	text-decoration: none;
+	color: white;
+	font-family: "Swis721 Lt BT"; 
+	font-size: 20px;
+	letter-spacing: 1.5px;
+}
+
+/* ------------------------------ FIN NAV-BAR ------------------------------ */
+
+
+/* ------------------------------ HEADER ------------------------------ */
+.header {
+	overflow: hidden;
+}
+
+.header .starwars-header {
+	background-image: url("../img/starwars_title.png");
+	background-size: cover;
+	opacity: 0.15;
+}
+
+.header h1 {
+	position: relative;
+	font-family: "Star Jedi";
+	color: rgba(255, 255, 255);
+	letter-spacing: 1px;
+}
+
+/* ------------------------------ FIN HEADER ------------------------------ */
+
+/* ------------------------------ FORM ------------------------------ */
+
+h2, input {
+	display: block;
+	margin: 0px;
+	font-family: "helvetica";
+	letter-spacing: 1px;
+}
+
+input{
+    border: none;
+    background: transparent;
+    display: block;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+input, select, textarea{
+    color: white;
+}
+
+span{
+	display: none;
+}
+
+li{
+	font-size: 20px;
+	list-style-type: none;
+	margin-left: -30px;
+	color: white;
+	font-family: 'Helvetica';
+	font-weight: 600;
+}
+
+.no-result{
+	font-size: 20px;
+	display: none;
+}
+
+#ui-id-2{
+	margin-top: 200px;
+}
+/* ------------------------------ FIN FORM ------------------------------ */
+
+/* ------------------------------ MEDIA QUERIES - HEADER & FORM ------------------------------ */
+@media screen and (max-width: 1000px) {
+	.header {
+		padding-left: 0px;
+		padding-top: 20%;
+	}
+
+	.header .starwars-header {
+		display:none;
+	}
+
+	.header h1 {
+		font-size: 70px;
+		margin-top: 0px; 
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	form {
+		margin-top: 75px;
+		margin-left: calc(100% - 725px);
+		width: 100%;
+	}
+
+	h2, input {
+		font-size: 30px;
+		text-align: center;
+		width: 100%;
+	}
+	
+	.no-result{
+	margin-left: 300px;
+	}
+	
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+	.header {
+		padding-left: calc(100% - 750px);
+		padding-top: 200px;
+	}
+
+	.header .starwars-header {
+		width: 100%;
+		height: 137px;
+	}
+
+	.header h1 {
+		font-size: 60px;
+		margin-top: -76px; 
+		margin-left: 350px;
+		margin-bottom: 0px;
+		margin-right: 0px; 
+	}
+
+	form {
+		margin-top: 75px;
+		margin-left: calc(100% - 450px);
+		width: 450px;
+	}
+
+	input {
+		width: 450px;
+	}
+
+	h2, input {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+	.header {
+		padding-left: calc(100% - 750px);
+		padding-top: 200px;
+	}
+
+	.header .starwars-header {
+		width: 100%;
+		height: 137px;
+	}
+
+	.header h1 {
+		font-size: 60px;
+		margin-top: -76px; 
+		margin-left: 350px;
+		margin-bottom: 0px;
+		margin-right: 0px; 
+	}
+
+	form {
+		margin-top: 75px;
+		margin-left: calc(100% - 825px);
+		width: 525px;
+	}
+
+	input {
+		width: 525px;
+	}
+
+	h2, input {
+		font-size: 40px;
+	}
+}
+
+@media screen and (min-width: 1601px) {
+	.header {
+		padding-left: 750px;
+		padding-top: 200px;
+	}
+
+	.header .starwars-header {
+		width: 1425px;
+		height: 175px;
+	}
+
+	.header h1 {
+		font-size: 90px;
+		margin-top: -114px; 
+		margin-left: 350px;
+		margin-bottom: 0px;
+		margin-right: 0px; 
+	}
+
+	form {
+		margin-top: 75px;
+		margin-left: calc(100% - 670px);
+		width: 600px;
+	}
+
+	input {
+		width: 600px;
+	}
+
+	h2, input {
+		font-size: 50px;
+	}
+}
+
+/* ------------------------------ FIN - MEDIA QUERIES - HEADER & FORM ------------------------------ */
+
+
+/* ------------------------------ CLASSES : CODE COULEUR JEDI ------------------------------ */
+
+.anakin{
+	color: blue;
+}
+
+leia dooku luke C3PO R2D2 yoda vador jinn kenobi sidious windu fisto

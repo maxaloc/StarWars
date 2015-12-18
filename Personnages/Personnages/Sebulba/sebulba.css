@@ -1,0 +1,59 @@
+/*PERSONNALISATION PAGE*/
+/*BACKGROUND*/
+
+body {
+	background: url('../../img/fond/sebulba.jpg') center no-repeat;
+	background-size: cover;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*QUOTE*/
+.zoom{
+	background: url('../../img/quote/sebulba.jpg') no-repeat center;
+	background-size: cover;
+}
+
+/*DESCRIPTION COLOR*/
+.column-1{
+	color: #bf0e0e;
+}
+
+.column-3{
+	color: #bf0e0e;
+}
+
+.description{
+	border: solid thin #bf0e0e;
+	border-right: none;
+}
+
+/*NAV DOTS COLOR*/
+
+#fp-nav.left {
+    left: 60px;
+}
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+    background: #bf0e0e;
+    position: absolute;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    border: 1px solid #bf0e0e;
+    background: rgba(56, 56, 56, 1);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span,
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    width: 8px;
+    height: 8px;
+    margin: -2px 0 0 -2px;
+}
